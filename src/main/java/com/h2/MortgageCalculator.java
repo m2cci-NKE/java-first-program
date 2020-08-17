@@ -15,17 +15,17 @@ public class MortgageCalculator {
 		System.out.println(calculatore.toString());
 	}
 	
-	private long loanAmont;
+	private long loanAmount;
 	private static int termeInYears; 
 	private float annualRate;
 	private double monthlyPayment;
 	
 	
-	public MortgageCalculator(long loanAmont,int termeInYears,float annualRate ) {
+	public MortgageCalculator(long loanAmount ,int termeInYears,float annualRate ) {
 		
 		this.annualRate=annualRate;
 		this.termeInYears=termeInYears;
-		this.loanAmont=loanAmont;
+		this.loanAmount =loanAmount ;
 	}
 	
 	
@@ -41,7 +41,7 @@ public class MortgageCalculator {
 	
 	public void calculateMonthlyPayment() {
 		//M = P(r(1+r)^n/(((1+r)^n)-1)
-		long P =loanAmont;
+		long P =loanAmount;
 		float r = getMonthlyInterestRate();
 		int n =getNumberOfPayments();
 		double M = P * (((r * Math.pow(1 + r, n))) / ((Math.pow((1 + r), n)) - 1));
