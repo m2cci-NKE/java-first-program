@@ -7,7 +7,7 @@ public class MortgageCalculator {
 	public static void main(String[] args) {
 		
 		long loanAmount  = Long.parseLong(args[0]);
-		int termInYears= Integer.parseInt(args[1]);
+		int termeInYears = Integer.parseInt(args[1]);
 		float annualRate= Float.parseFloat(args[2]);
 		
 		MortgageCalculator calculatore = new MortgageCalculator(loanAmount, termeInYears, annualRate);
