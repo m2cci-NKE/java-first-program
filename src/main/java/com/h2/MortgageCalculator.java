@@ -6,11 +6,11 @@ public class MortgageCalculator {
 	
 	public static void main(String[] args) {
 		
-		long loanAmont = Long.parseLong(args[0]);
+		long loanAmount  = Long.parseLong(args[0]);
 		int termInYears= Integer.parseInt(args[1]);
 		float annualRate= Float.parseFloat(args[2]);
 		
-		MortgageCalculator calculatore = new MortgageCalculator(loanAmont, termeInYears, annualRate);
+		MortgageCalculator calculatore = new MortgageCalculator(loanAmount, termeInYears, annualRate);
 		calculatore.calculateMonthlyPayment();
 		System.out.println(calculatore.toString());
 	}
