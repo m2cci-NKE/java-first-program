@@ -19,6 +19,7 @@ public class Utilities {
 		
 		try {
 			out= Integer.parseInt(in);
+			
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
 		}

@@ -9,7 +9,7 @@ public class MortgageCalculator {
 		
 		long loanAmount  = Utilities.getLongValue(args[0]);
 		int termeInYears = Utilities.getIntValue(args[1]);
-		float annualRate= Utilities.getIntFloat(args[2]);
+		float annualRate= Utilities.getFloatValue(args[2]);
 		
 		MortgageCalculator calculatore = new MortgageCalculator(loanAmount, termeInYears, annualRate);
 		calculatore.calculateMonthlyPayment();
