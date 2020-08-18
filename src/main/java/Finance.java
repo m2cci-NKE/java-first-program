@@ -21,7 +21,7 @@ public class Finance {
 			return;
 			}
 		if (!isValidCommand) {
-			commandsToUsage.get(args[0]);
+			System.out.println(commandsToUsage.get(args[0]));
 			return;
 		}
 		
