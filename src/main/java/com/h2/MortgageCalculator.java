@@ -54,7 +54,6 @@ public class MortgageCalculator {
 	public String toString() {
 		
 		DecimalFormat df= new DecimalFormat("####0.00");
-		
 		return "monthlyPayment: " + df.format(monthlyPayment);
 	}
 	
