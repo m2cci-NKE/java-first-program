@@ -4,6 +4,10 @@ package com.h2;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.h2.BestLoanRates;
+import com.h2.MortgageCalculator;
+import com.h2.SavingsCalculator;
+
 
 public class Finance {
 	
