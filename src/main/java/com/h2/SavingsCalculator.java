@@ -14,12 +14,12 @@ public class SavingsCalculator {
 		float[] debits = null;
 		
 		for (int i = 0; i < creditsAsString.length; i++) {
-			credits[i] = Float.parseFloat(creditsAsString[i]);
+			credits[i] = Utilities.getIntFloat(creditsAsString[i]);
 			
 		}
 		
 		for (int i = 0; i < debitsAsString.length; i++) {
-			debits[i] = Float.parseFloat(debitsAsString[i]);
+			debits[i] = Utilities.getIntFloat(debitsAsString[i]);
 			
 		}
 		

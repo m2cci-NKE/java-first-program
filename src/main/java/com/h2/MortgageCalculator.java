@@ -5,10 +5,11 @@ import java.text.DecimalFormat;
 public class MortgageCalculator {
 	
 	public static void main(String[] args) {
+	
 		
-		long loanAmount  = Long.parseLong(args[0]);
-		int termeInYears = Integer.parseInt(args[1]);
-		float annualRate= Float.parseFloat(args[2]);
+		long loanAmount  = Utilities.getLongValue(args[0]);
+		int termeInYears = Utilities.getIntValue(args[1]);
+		float annualRate= Utilities.getIntFloat(args[2]);
 		
 		MortgageCalculator calculatore = new MortgageCalculator(loanAmount, termeInYears, annualRate);
 		calculatore.calculateMonthlyPayment();
