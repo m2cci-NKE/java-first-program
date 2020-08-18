@@ -20,7 +20,7 @@ public class Utilities {
 		try {
 			out= Integer.parseInt(in);
 		} catch (NumberFormatException e) {
-			throw new IllegalArgumentException(in + in + " cannot be converted into a 'int' value. Exiting program.");
+			throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
 		}
 		return out;
 		
@@ -28,14 +28,14 @@ public class Utilities {
 	}
 	
 	
-	public static float getIntFloat(String in) {
+	public static float getFloatValue(String in) {
 		
 		float out = Float.MIN_VALUE;
 		
 		try {
 			out= Float.parseFloat(in);
 		} catch (NumberFormatException e) {
-			throw new IllegalArgumentException(in + in + in + " cannot be converted into a 'float' value. Exiting program.");
+			throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
 		}
 		
 		return out;
